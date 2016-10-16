@@ -22,6 +22,10 @@ User can tap the area for "Having trouble signing in?"
 
 User can log out from the Settings screen.
 
+[Optional] Toggle a star to favorite a file
+
+[Optional] Add a Text Field to trigger keyboard, and tap outside to dismiss it.
+
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
