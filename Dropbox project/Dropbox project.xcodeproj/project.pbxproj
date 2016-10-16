@@ -21,6 +21,7 @@
 		CC319CDB1DB2B2990028D354 /* SignInFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC319CDA1DB2B2990028D354 /* SignInFormViewController.swift */; };
 		CC319CDD1DB2B5D30028D354 /* CreateAccountFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC319CDC1DB2B5D30028D354 /* CreateAccountFormViewController.swift */; };
 		CC319CDF1DB2BF8B0028D354 /* DoneTermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC319CDE1DB2BF8B0028D354 /* DoneTermsViewController.swift */; };
+		CC322D1A1DB33E7B004E0545 /* SettingsNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC322D191DB33E7B004E0545 /* SettingsNewUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		CC319CDA1DB2B2990028D354 /* SignInFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInFormViewController.swift; sourceTree = "<group>"; };
 		CC319CDC1DB2B5D30028D354 /* CreateAccountFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountFormViewController.swift; sourceTree = "<group>"; };
 		CC319CDE1DB2BF8B0028D354 /* DoneTermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneTermsViewController.swift; sourceTree = "<group>"; };
+		CC322D191DB33E7B004E0545 /* SettingsNewUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsNewUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				CC319CDE1DB2BF8B0028D354 /* DoneTermsViewController.swift */,
 				CC0B754D1DB2CBCC00C48EA3 /* SettingsViewController.swift */,
 				CC0B754F1DB2D0DA00C48EA3 /* PhotosViewController.swift */,
+				CC322D191DB33E7B004E0545 /* SettingsNewUserViewController.swift */,
 			);
 			path = "Dropbox project";
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				CC319CD91DB2A27F0028D354 /* SignInViewController.swift in Sources */,
 				CC319CDD1DB2B5D30028D354 /* CreateAccountFormViewController.swift in Sources */,
 				CC319CD71DB2A25E0028D354 /* CreateAccountViewController.swift in Sources */,
+				CC322D1A1DB33E7B004E0545 /* SettingsNewUserViewController.swift in Sources */,
 				CC319CDB1DB2B2990028D354 /* SignInFormViewController.swift in Sources */,
 				CC319CA51DB140FF0028D354 /* ViewController.swift in Sources */,
 				CC319CA31DB140FF0028D354 /* AppDelegate.swift in Sources */,
