@@ -76,14 +76,14 @@
                                 <frame key="frameInset" minX="45" minY="441" width="283" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="RtK-w1-Whb" kind="modal" animates="NO" id="8iT-4i-yc5"/>
+                                    <segue destination="nZB-dn-MlL" kind="modal" animates="NO" id="QSF-Sm-H9o"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Iuu-lB-bQz">
                                 <frame key="frameInset" minX="150" minY="543" width="78" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="nZB-dn-MlL" kind="modal" animates="NO" id="1cT-1S-O87"/>
+                                    <segue destination="RtK-w1-Whb" kind="modal" animates="NO" id="Kez-Cy-VWt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -226,7 +226,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="scO-hi-zZw">
-                                <frame key="frameInset" minX="136" minY="121" width="189" height="45"/>
+                                <frame key="frameInset" minX="136" minY="173" width="189" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="hFZ-cM-fiX" kind="modal" animates="NO" id="1py-gA-xIw"/>
@@ -445,7 +445,7 @@
         <!--Files-->
         <scene sceneID="LFl-zO-Bua">
             <objects>
-                <viewController id="nGD-WI-ITr" sceneMemberID="viewController">
+                <viewController id="nGD-WI-ITr" customClass="FilesViewController" customModule="Dropbox_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ufk-b5-zeK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -454,14 +454,40 @@
                                 <frame key="frameInset" minY="63" width="375" height="554"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JzP-5G-Cew">
+                                <frame key="frameInset" minX="323" minY="328" width="26" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="favorited_btn"/>
+                                <state key="selected" image="favorite_btn"/>
+                                <connections>
+                                    <action selector="onPress:" destination="nGD-WI-ITr" eventType="touchUpInside" id="5fp-q1-2gr"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.20000000000000001" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="9nM-RZ-PN2">
+                                <frame key="frameInset" minY="74" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Wrd-6Q-zlQ" appends="YES" id="PKg-Ob-Rgr"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Files" id="sss-Xg-Jq4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wdu-Kk-2Jj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Wrd-6Q-zlQ">
+                    <connections>
+                        <action selector="didTap:" destination="nGD-WI-ITr" id="fY5-ub-2UD"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5440" y="-704"/>
+            <point key="canvasLocation" x="5439.5" y="-704.5"/>
         </scene>
         <!--Photos-->
         <scene sceneID="rmC-Qs-jCW">
@@ -684,7 +710,7 @@
         <scene sceneID="I8q-IZ-VwY">
             <objects>
                 <viewController id="zu2-AD-Czi" customClass="SettingsViewController" customModule="Dropbox_project" customModuleProvider="target" sceneMemberID="viewController">
-                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="C8f-vP-tqp">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" id="C8f-vP-tqp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="950"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -814,7 +840,7 @@
         <scene sceneID="o5I-9K-r7E">
             <objects>
                 <viewController id="zco-N9-hIc" customClass="SettingsNewUserViewController" customModule="Dropbox_project" customModuleProvider="target" sceneMemberID="viewController">
-                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="q34-Z5-CGm">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" id="q34-Z5-CGm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="950"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -934,6 +960,7 @@
         <image name="existing_photos" width="320" height="725"/>
         <image name="favorite_btn" width="26" height="25"/>
         <image name="favorited" width="320" height="417"/>
+        <image name="favorited_btn" width="26" height="25"/>
         <image name="files_tab" width="30" height="30"/>
         <image name="logged_out" width="320" height="568"/>
         <image name="photos_tab" width="30" height="30"/>
@@ -954,7 +981,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="dX2-d6-qE4"/>
-        <segue reference="m6g-Bi-sdu"/>
+        <segue reference="I3C-EL-Yhv"/>
         <segue reference="IEL-uH-AiS"/>
     </inferredMetricsTieBreakers>
 </document>
