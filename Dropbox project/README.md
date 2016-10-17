@@ -1,6 +1,6 @@
 # Assignment Week 1 - *Dropbox project*
 
-Time spent: **10** hours spent in total
+Time spent: **11** hours spent in total
 
 ## User Stories
 
@@ -40,4 +40,4 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 I spent a long time to figure out how to trigger the transition manually.
 
-Still working on adding page controllers to welcoming pages.
+Still working on adding real page indicator dots with UIPageControl.
