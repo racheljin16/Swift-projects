@@ -12,9 +12,9 @@ class ScrollingWelcomeViewController: UIViewController {
     
     @IBOutlet var scrollView: UIScrollView!
 
-    @IBOutlet weak var ScrollingImage: UIImageView!
     
-    @IBOutlet var pageControl: UIPageControl!
+    
+//    @IBOutlet var pageControl: UIPageControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,11 +23,11 @@ class ScrollingWelcomeViewController: UIViewController {
 //        
 //        let indicatorTintedColor = UIColor(red: 13, green: 103, blue: 223, alpha: 0.5)
 
-        scrollView.contentSize = ScrollingImage.frame.size
-        pageControl.numberOfPages = 3
-        pageControl.currentPageIndicatorTintColor = UIColor.black
-        
-        pageControl.pageIndicatorTintColor = UIColor.green
+        scrollView.contentSize = CGSize(width: 1125, height: 667)
+//        pageControl.numberOfPages = 3
+//        pageControl.currentPageIndicatorTintColor = UIColor.black
+//        
+//        pageControl.pageIndicatorTintColor = UIColor.green
 
         // Do any additional setup after loading the view.
     }

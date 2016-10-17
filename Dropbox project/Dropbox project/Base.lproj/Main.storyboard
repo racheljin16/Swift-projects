@@ -14,10 +14,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1125" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" image="welcome" id="3MQ-Y2-Gv6">
-                                <rect key="frame" x="0.0" y="0.0" width="1126" height="666"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fdn-3k-3w0">
                                 <rect key="frame" x="787" y="446" width="283" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -28,27 +24,41 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Iuu-lB-bQz">
                                 <rect key="frame" x="904" y="548" width="78" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="welcome1" id="EBJ-pg-VR4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="666"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="welcome2" id="SAk-pW-225">
+                                <rect key="frame" x="375" y="0.0" width="375" height="666"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="welcome3" id="NZm-Ml-dC9">
+                                <rect key="frame" x="750" y="0.0" width="375" height="666"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wWf-D2-13Y">
+                                <rect key="frame" x="904" y="548" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="RtK-w1-Whb" kind="modal" animates="NO" id="RPX-ET-tGK"/>
+                                    <segue destination="RtK-w1-Whb" kind="modal" id="jjR-dc-BRg"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KSD-Lo-gKj">
+                                <rect key="frame" x="787" y="446" width="304" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
                         </subviews>
                     </scrollView>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1125" height="667"/>
                     <connections>
-                        <outlet property="ScrollingImage" destination="3MQ-Y2-Gv6" id="JTy-4P-b0t"/>
-                        <outlet property="pageControl" destination="6hh-KJ-CYI" id="Vwq-Ir-YSw"/>
                         <outlet property="scrollView" destination="VtC-XW-ghK" id="Kc3-nX-cfY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wAX-Oo-yeT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <pageControl opaque="NO" contentMode="bottom" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" id="6hh-KJ-CYI">
-                    <rect key="frame" x="0.0" y="0.0" width="484" height="37"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </pageControl>
             </objects>
-            <point key="canvasLocation" x="16" y="137"/>
+            <point key="canvasLocation" x="15.5" y="-707.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -68,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1983" y="137"/>
+            <point key="canvasLocation" x="-1513" y="137"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JVV-RY-hY2">
@@ -88,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1B-uc-beh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1540" y="137"/>
+            <point key="canvasLocation" x="-1065" y="137"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="47A-0D-oUp">
@@ -122,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aa1-ry-pHN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="391" y="983"/>
+            <point key="canvasLocation" x="391" y="137"/>
         </scene>
         <!--Create Account View Controller-->
         <scene sceneID="BVD-J0-idY">
@@ -1000,7 +1010,6 @@
         <image name="sign_in2" width="320" height="568"/>
         <image name="sign_in3" width="320" height="568"/>
         <image name="terms" width="320" height="568"/>
-        <image name="welcome" width="960" height="568"/>
         <image name="welcome1" width="320" height="568"/>
         <image name="welcome2" width="320" height="568"/>
         <image name="welcome3" width="320" height="568"/>
@@ -1011,10 +1020,10 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="IEL-uH-AiS"/>
-        <segue reference="jI9-Y8-QOH"/>
-        <segue reference="RPX-ET-tGK"/>
         <segue reference="dX2-d6-qE4"/>
-        <segue reference="m6g-Bi-sdu"/>
+        <segue reference="jjR-dc-BRg"/>
+        <segue reference="jI9-Y8-QOH"/>
+        <segue reference="1Z1-pY-XkC"/>
+        <segue reference="I3C-EL-Yhv"/>
     </inferredMetricsTieBreakers>
 </document>
