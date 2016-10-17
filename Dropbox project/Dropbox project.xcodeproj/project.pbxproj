@@ -12,7 +12,6 @@
 		CC319CA31DB140FF0028D354 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC319CA21DB140FF0028D354 /* AppDelegate.swift */; };
 		CC319CA51DB140FF0028D354 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC319CA41DB140FF0028D354 /* ViewController.swift */; };
 		CC319CA81DB140FF0028D354 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC319CA61DB140FF0028D354 /* Main.storyboard */; };
-		CC319CAA1DB140FF0028D354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC319CA91DB140FF0028D354 /* Assets.xcassets */; };
 		CC319CAD1DB140FF0028D354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC319CAB1DB140FF0028D354 /* LaunchScreen.storyboard */; };
 		CC319CB81DB140FF0028D354 /* Dropbox_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC319CB71DB140FF0028D354 /* Dropbox_projectTests.swift */; };
 		CC319CC31DB140FF0028D354 /* Dropbox_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC319CC21DB140FF0028D354 /* Dropbox_projectUITests.swift */; };
@@ -23,6 +22,8 @@
 		CC319CDF1DB2BF8B0028D354 /* DoneTermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC319CDE1DB2BF8B0028D354 /* DoneTermsViewController.swift */; };
 		CC322D1A1DB33E7B004E0545 /* SettingsNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC322D191DB33E7B004E0545 /* SettingsNewUserViewController.swift */; };
 		CC3ABAD91DB3EE2D00E52FF4 /* FilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3ABAD81DB3EE2D00E52FF4 /* FilesViewController.swift */; };
+		CC3ABADB1DB4258200E52FF4 /* ScrollingWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3ABADA1DB4258200E52FF4 /* ScrollingWelcomeViewController.swift */; };
+		CC3ABADF1DB439B000E52FF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC3ABADE1DB439B000E52FF4 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,6 @@
 		CC319CA21DB140FF0028D354 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC319CA41DB140FF0028D354 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CC319CA71DB140FF0028D354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CC319CA91DB140FF0028D354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC319CAC1DB140FF0028D354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC319CAE1DB140FF0028D354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC319CB31DB140FF0028D354 /* Dropbox projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dropbox projectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +65,8 @@
 		CC319CDE1DB2BF8B0028D354 /* DoneTermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneTermsViewController.swift; sourceTree = "<group>"; };
 		CC322D191DB33E7B004E0545 /* SettingsNewUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsNewUserViewController.swift; sourceTree = "<group>"; };
 		CC3ABAD81DB3EE2D00E52FF4 /* FilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesViewController.swift; sourceTree = "<group>"; };
+		CC3ABADA1DB4258200E52FF4 /* ScrollingWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingWelcomeViewController.swift; sourceTree = "<group>"; };
+		CC3ABADE1DB439B000E52FF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,21 +117,22 @@
 		CC319CA11DB140FF0028D354 /* Dropbox project */ = {
 			isa = PBXGroup;
 			children = (
+				CC3ABADE1DB439B000E52FF4 /* Assets.xcassets */,
 				CC319CA21DB140FF0028D354 /* AppDelegate.swift */,
-				CC319CA41DB140FF0028D354 /* ViewController.swift */,
-				CC319CA61DB140FF0028D354 /* Main.storyboard */,
-				CC319CA91DB140FF0028D354 /* Assets.xcassets */,
-				CC319CAB1DB140FF0028D354 /* LaunchScreen.storyboard */,
-				CC319CAE1DB140FF0028D354 /* Info.plist */,
-				CC319CD61DB2A25E0028D354 /* CreateAccountViewController.swift */,
-				CC319CD81DB2A27F0028D354 /* SignInViewController.swift */,
-				CC319CDA1DB2B2990028D354 /* SignInFormViewController.swift */,
 				CC319CDC1DB2B5D30028D354 /* CreateAccountFormViewController.swift */,
+				CC319CD61DB2A25E0028D354 /* CreateAccountViewController.swift */,
 				CC319CDE1DB2BF8B0028D354 /* DoneTermsViewController.swift */,
-				CC0B754D1DB2CBCC00C48EA3 /* SettingsViewController.swift */,
+				CC3ABAD81DB3EE2D00E52FF4 /* FilesViewController.swift */,
+				CC319CAE1DB140FF0028D354 /* Info.plist */,
+				CC319CAB1DB140FF0028D354 /* LaunchScreen.storyboard */,
+				CC319CA61DB140FF0028D354 /* Main.storyboard */,
 				CC0B754F1DB2D0DA00C48EA3 /* PhotosViewController.swift */,
 				CC322D191DB33E7B004E0545 /* SettingsNewUserViewController.swift */,
-				CC3ABAD81DB3EE2D00E52FF4 /* FilesViewController.swift */,
+				CC0B754D1DB2CBCC00C48EA3 /* SettingsViewController.swift */,
+				CC319CDA1DB2B2990028D354 /* SignInFormViewController.swift */,
+				CC319CD81DB2A27F0028D354 /* SignInViewController.swift */,
+				CC319CA41DB140FF0028D354 /* ViewController.swift */,
+				CC3ABADA1DB4258200E52FF4 /* ScrollingWelcomeViewController.swift */,
 			);
 			path = "Dropbox project";
 			sourceTree = "<group>";
@@ -260,7 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC319CAD1DB140FF0028D354 /* LaunchScreen.storyboard in Resources */,
-				CC319CAA1DB140FF0028D354 /* Assets.xcassets in Resources */,
+				CC3ABADF1DB439B000E52FF4 /* Assets.xcassets in Resources */,
 				CC319CA81DB140FF0028D354 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +292,7 @@
 				CC0B75501DB2D0DA00C48EA3 /* PhotosViewController.swift in Sources */,
 				CC319CDF1DB2BF8B0028D354 /* DoneTermsViewController.swift in Sources */,
 				CC319CD91DB2A27F0028D354 /* SignInViewController.swift in Sources */,
+				CC3ABADB1DB4258200E52FF4 /* ScrollingWelcomeViewController.swift in Sources */,
 				CC319CDD1DB2B5D30028D354 /* CreateAccountFormViewController.swift in Sources */,
 				CC319CD71DB2A25E0028D354 /* CreateAccountViewController.swift in Sources */,
 				CC322D1A1DB33E7B004E0545 /* SettingsNewUserViewController.swift in Sources */,
