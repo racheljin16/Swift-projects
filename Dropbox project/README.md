@@ -40,4 +40,4 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 I spent a long time to figure out how to trigger the transition manually.
 
-Still working on some optional requirements.
+Still working on adding page controllers to welcoming pages.
