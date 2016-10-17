@@ -26,6 +26,8 @@ User can log out from the Settings screen.
 
 [Optional] Add a Text Field to trigger keyboard, and tap outside to dismiss it.
 
+[Optional] Scrolling through the welcome screens instead of just tapping them.
+
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
