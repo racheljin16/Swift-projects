@@ -30,7 +30,7 @@ Time spent: **9** hours spent in total
 ##### Video Walkthrough 
 - Here's a walkthrough of implemented user stories:
 
-<a href="dropbox-demo.gif" target="_blank"><img src='carousel-demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /></a>
+<a href="carousel-demo.gif" target="_blank"><img src='carousel-demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /></a>
 
 
 
