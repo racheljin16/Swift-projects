@@ -3,7 +3,7 @@
 Time spent: **11** hours spent in total
 
 ##### User Stories
-Requried:
+###### Requried:
 - User can tap through the 3 welcome screens.
 - User can follow the create user flow.
 - On the create user form, the user can tap the back button to go to the page where they can sign in or create an account.
@@ -13,7 +13,7 @@ Requried:
 - User can follow the sign in flow.
 - User can tap the area for "Having trouble signing in?"
 - User can log out from the Settings screen.
-Optional:
+###### Optional:
 - Toggle a star to favorite a file
 - Add a Text Field to trigger keyboard, and tap outside to dismiss it.
 - Scrolling through the welcome screens instead of just tapping them.
