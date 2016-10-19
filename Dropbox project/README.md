@@ -20,6 +20,7 @@ Optional:
 
 ##### Video Walkthrough 
 - Here's a walkthrough of implemented user stories:
+
 <a href="dropbox-demo.gif" target="_blank"><img src='dropbox-demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /></a>
 
 ##### Notes
