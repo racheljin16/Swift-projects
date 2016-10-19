@@ -1,9 +1,12 @@
-# Assignment Week 2 - *Carousel project*
+## Carousel - assignment 2
+
+The purpose of this homework is to leverage views, view properties, and events to create a high fidelity prototype that is difficult to distinguish from a production app. We're going to use the techniques from this week to implement the Carousel app from the signed out state to the basic signed in state.
 
 Time spent: **9** hours spent in total
 
-##### User Stories
-###### Requried:
+### Features
+
+### Required User Stories
 1. Landing Screen: 
   - Static photo tiles on the initial screen.
   - User can scroll to reveal sign in buttons.
@@ -25,7 +28,10 @@ Time spent: **9** hours spent in total
   - User can dismiss the settings screen.
   - User can log out.
 
-###### Optional:
+### Optional User Stories:
+1. Onboarding Tutorial
+  - Add a page control
+  - Upon reaching the 4th page, the page indicators disappear and the "Take for a spin" button fades in.
 
 ##### Video Walkthrough 
 - Here's a walkthrough of implemented user stories:
