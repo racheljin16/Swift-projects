@@ -5,8 +5,8 @@ Time spent: **9** hours spent in total
 ##### User Stories
 ###### Requried:
 1. Landing Screen: 
-- Static photo tiles on the initial screen.
-- User can scroll to reveal sign in buttons.
+  - Static photo tiles on the initial screen.
+  - User can scroll to reveal sign in buttons.
 2. Sign In
 * Tapping on email/password reveals the keyboard and shifts the scroll view and Sign In button up.
 * Upon tapping the Sign In button.
