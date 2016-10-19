@@ -20,11 +20,8 @@ Optional:
 
 ##### Video Walkthrough 
 - Here's a walkthrough of implemented user stories:
-
 <a href="dropbox-demo.gif" target="_blank"><img src='dropbox-demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /></a>
 
 ##### Notes
-
-I spent a long time to figure out how to trigger the transition manually.
-
-Still working on adding real page indicator dots with UIPageControl.
+- I spent a long time to figure out how to trigger the transition manually.
+- Still working on adding real page indicator dots with UIPageControl.
