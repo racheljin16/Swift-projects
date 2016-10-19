@@ -13,6 +13,7 @@ Time spent: **11** hours spent in total
 - User can follow the sign in flow.
 - User can tap the area for "Having trouble signing in?"
 - User can log out from the Settings screen.
+
 ###### Optional:
 - Toggle a star to favorite a file
 - Add a Text Field to trigger keyboard, and tap outside to dismiss it.
