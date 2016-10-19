@@ -13,6 +13,17 @@ Time spent: **9** hours spent in total
     - If the username or password fields are empty, user sees an error alert.
     - If credentials are incorrect, user sees a loading indicator for 2 seconds followed by an error alert.
     - If the credentials are correct, user sees a loading indicator for 2 seconds followed by a transition to the Sign In screens.
+3. Tutorial Screens
+  - User can page between the screens.
+4. Image Timeline
+  - Display a scrollable view of images.
+  - User can tap on the conversations button to see the conversations screen (push).
+  - User can tap on the profile image to see the settings view (modal from below).
+5. Conversations
+  - User can dismiss the conversations screen.
+6. Settings
+  - User can dismiss the settings screen.
+  - User can log out.
 
 ###### Optional:
 
