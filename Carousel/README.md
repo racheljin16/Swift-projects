@@ -2,7 +2,7 @@
 
 The purpose of this homework is to leverage views, view properties, and events to create a high fidelity prototype that is difficult to distinguish from a production app. We're going to use the techniques from this week to implement the Carousel app from the signed out state to the basic signed in state.
 
-Time spent: **11** hours spent in total
+Time spent: **12** hours spent in total
 
 ### Features
 
@@ -35,6 +35,13 @@ Time spent: **11** hours spent in total
   
 2. Landing Screen Animation
   - Photo tiles move, scale and rotate while user scrolls.
+
+3. Sign in page
+  - Sign In screen form scales and fades in as it appears.
+  - Pulling down on the scroll view dismisses the keyboard
+
+4. Create Account
+  - Create the sign up flow
 
 
 ##### Video Walkthrough 
