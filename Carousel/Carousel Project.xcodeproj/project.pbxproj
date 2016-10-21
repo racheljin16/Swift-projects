@@ -21,6 +21,7 @@
 		CC5E7B6B1DB7F8670021206C /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5E7B6A1DB7F8670021206C /* PhotosViewController.swift */; };
 		CC5E7B6D1DB7FC640021206C /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5E7B6C1DB7FC640021206C /* ConversationViewController.swift */; };
 		CC5E7B6F1DB7FD7E0021206C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5E7B6E1DB7FD7E0021206C /* SettingsViewController.swift */; };
+		CC825D7F1DBABB6C000D6CCB /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC825D7E1DBABB6C000D6CCB /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		CC5E7B6A1DB7F8670021206C /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		CC5E7B6C1DB7FC640021206C /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		CC5E7B6E1DB7FD7E0021206C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CC825D7E1DBABB6C000D6CCB /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateAccountViewController.swift; path = "Carousel Project/CreateAccountViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				CC5E7B6A1DB7F8670021206C /* PhotosViewController.swift */,
 				CC5E7B6C1DB7FC640021206C /* ConversationViewController.swift */,
 				CC5E7B6E1DB7FD7E0021206C /* SettingsViewController.swift */,
+				CC825D7E1DBABB6C000D6CCB /* CreateAccountViewController.swift */,
 			);
 			path = "Carousel project";
 			sourceTree = "<group>";
@@ -228,7 +231,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CC30672B1DB514CF002EFB95 /* Build configuration list for PBXProject "Carousel project" */;
+			buildConfigurationList = CC30672B1DB514CF002EFB95 /* Build configuration list for PBXProject "Carousel Project" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC825D7F1DBABB6C000D6CCB /* CreateAccountViewController.swift in Sources */,
 				CC3067361DB514CF002EFB95 /* ViewController.swift in Sources */,
 				CC3067621DB5150E002EFB95 /* Common.swift in Sources */,
 				CC5E7B6D1DB7FC640021206C /* ConversationViewController.swift in Sources */,
@@ -515,7 +519,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC30672B1DB514CF002EFB95 /* Build configuration list for PBXProject "Carousel project" */ = {
+		CC30672B1DB514CF002EFB95 /* Build configuration list for PBXProject "Carousel Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC3067561DB514CF002EFB95 /* Debug */,

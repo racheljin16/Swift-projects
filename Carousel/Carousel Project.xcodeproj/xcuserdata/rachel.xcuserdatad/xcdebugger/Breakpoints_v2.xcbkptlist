@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Carousel project/LoginViewController.swift"
-            timestampString = "498475119.241917"
+            timestampString = "498776092.892429"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "onButton(_:)"
             landmarkType = "7">
          </BreakpointContent>

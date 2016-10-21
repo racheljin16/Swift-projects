@@ -28,6 +28,9 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var loginIndicator: UIActivityIndicatorView!
     
     
+    @IBAction func onClickBack(_ sender: UIButton) {
+        navigationController!.popViewController(animated: true)
+    }
     @IBAction func onButton(_ sender: UIButton) {
         loginIndicator.startAnimating()
 
@@ -91,12 +94,48 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         buttonOffset = -120
 
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        // If the scrollView has been scrolled down by 50px or more...
+        if scrollView.contentOffset.y <= -50 {
+            // Hide the keyboard
+            view.endEditing(true)
+        }
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        // Move the buttons back down to it's original position
+        buttonParentView.frame.origin.y = buttonInitialY
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var loginNavBar: UIImageView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        // Set initial transform values 20% of original size
+        let transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
+        // Apply the transform properties of the views
+        loginNavBar.transform = transform
+        fieldParentView.transform = transform
+        // Set the alpha properties of the views to transparent
+        loginNavBar.alpha = 0
+        fieldParentView.alpha = 0
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        //Animate the code within over 0.3 seconds...
+        UIView.animate(withDuration: 0.3) { () -> Void in
+            // Return the views transform properties to their default states.
+            self.fieldParentView.transform = CGAffineTransform.identity
+            self.loginNavBar.transform = CGAffineTransform.identity
+            // Set the alpha properties of the views to fully opaque
+            self.fieldParentView.alpha = 1
+            self.loginNavBar.alpha = 1
+        }
+    }
    
     
 
