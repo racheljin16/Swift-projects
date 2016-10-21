@@ -2,7 +2,7 @@
 
 The purpose of this homework is to leverage views, view properties, and events to create a high fidelity prototype that is difficult to distinguish from a production app. We're going to use the techniques from this week to implement the Carousel app from the signed out state to the basic signed in state.
 
-Time spent: **9** hours spent in total
+Time spent: **11** hours spent in total
 
 ### Features
 
@@ -32,6 +32,10 @@ Time spent: **9** hours spent in total
 1. Onboarding Tutorial
   - Add a page control
   - Upon reaching the 4th page, the page indicators disappear and the "Take for a spin" button fades in.
+  
+2. Landing Screen Animation
+  - Photo tiles move, scale and rotate while user scrolls.
+
 
 ##### Video Walkthrough 
 - Here's a walkthrough of implemented user stories:
@@ -39,7 +43,8 @@ Time spent: **9** hours spent in total
 <a href="carousel-demo.gif" target="_blank"><img src='carousel-demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /></a>
 
 
-
+##### Notes
+- Spent some time on the tile animation. Still have some questions on code.
 
 
 
