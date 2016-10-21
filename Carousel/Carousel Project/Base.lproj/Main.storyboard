@@ -57,6 +57,12 @@
                     <connections>
                         <outlet property="imageView" destination="YeZ-tb-xjZ" id="Dnw-fx-gzv"/>
                         <outlet property="scrollView" destination="8ag-fI-F83" id="k3H-8D-wmX"/>
+                        <outlet property="tileView1" destination="aYX-9F-LXP" id="vZ9-8e-uKV"/>
+                        <outlet property="tileView2" destination="eFs-O9-li6" id="ZcR-ZM-14s"/>
+                        <outlet property="tileView3" destination="wko-DH-ftC" id="AoT-WI-aAx"/>
+                        <outlet property="tileView4" destination="bAO-59-sB9" id="zDN-PI-9mc"/>
+                        <outlet property="tileView5" destination="hF1-uY-XKT" id="ZlA-8Z-QYH"/>
+                        <outlet property="tileView6" destination="6Ke-9M-2Yj" id="1v4-7U-Bxj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -338,6 +344,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RJh-Oc-C7U">
                                         <rect key="frame" x="0.0" y="733" width="375" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="MjS-1o-OE9" kind="modal" id="tmC-mV-L5h"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </scrollView>

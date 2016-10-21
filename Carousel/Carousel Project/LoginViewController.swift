@@ -89,16 +89,15 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         
         buttonInitialY = buttonParentView.frame.origin.y
         buttonOffset = -120
-        
-        
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+   
     
 
     /*
