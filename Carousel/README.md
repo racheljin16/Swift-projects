@@ -2,7 +2,7 @@
 
 The purpose of this homework is to leverage views, view properties, and events to create a high fidelity prototype that is difficult to distinguish from a production app. We're going to use the techniques from this week to implement the Carousel app from the signed out state to the basic signed in state.
 
-Time spent: **12** hours spent in total
+Time spent: **14** hours spent in total
 
 ### Features
 
@@ -30,18 +30,21 @@ Time spent: **12** hours spent in total
 
 ### Optional User Stories:
 1. Onboarding Tutorial
-  - Add a page control
+  - Add a page control.
   - Upon reaching the 4th page, the page indicators disappear and the "Take for a spin" button fades in.
+  - Sign Out Tapping the "Sign Out" button presents an action sheet.
   
 2. Landing Screen Animation
   - Photo tiles move, scale and rotate while user scrolls.
 
 3. Sign in page
   - Sign In screen form scales and fades in as it appears.
-  - Pulling down on the scroll view dismisses the keyboard
+  - Pulling down on the scroll view dismisses the keyboard.
+  - Sign In screen form scales and fades in as it appears.
 
 4. Create Account
-  - Create the sign up flow
+  - Create the sign up flow.
+  - Display the actual DropBox Terms using a web view.
 
 
 ##### Video Walkthrough 
@@ -52,6 +55,7 @@ Time spent: **12** hours spent in total
 
 ##### Notes
 - Spent some time on the tile animation. Still have some questions on code.
+- Spent some time on popping twice method.
 
 
 
