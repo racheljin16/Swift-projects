@@ -21,7 +21,9 @@
 		CC5E7B6B1DB7F8670021206C /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5E7B6A1DB7F8670021206C /* PhotosViewController.swift */; };
 		CC5E7B6D1DB7FC640021206C /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5E7B6C1DB7FC640021206C /* ConversationViewController.swift */; };
 		CC5E7B6F1DB7FD7E0021206C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5E7B6E1DB7FD7E0021206C /* SettingsViewController.swift */; };
+		CC6AFE671DBEA0A100DBD0F4 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6AFE661DBEA0A100DBD0F4 /* GetStartedViewController.swift */; };
 		CC825D7F1DBABB6C000D6CCB /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC825D7E1DBABB6C000D6CCB /* CreateAccountViewController.swift */; };
+		CC91781D1DBE94CC00C33335 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91781C1DBE94CC00C33335 /* TermsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +64,9 @@
 		CC5E7B6A1DB7F8670021206C /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		CC5E7B6C1DB7FC640021206C /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		CC5E7B6E1DB7FD7E0021206C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CC6AFE661DBEA0A100DBD0F4 /* GetStartedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetStartedViewController.swift; path = "Carousel Project/GetStartedViewController.swift"; sourceTree = SOURCE_ROOT; };
 		CC825D7E1DBABB6C000D6CCB /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateAccountViewController.swift; path = "Carousel Project/CreateAccountViewController.swift"; sourceTree = SOURCE_ROOT; };
+		CC91781C1DBE94CC00C33335 /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TermsViewController.swift; path = "Carousel Project/TermsViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 				CC5E7B6C1DB7FC640021206C /* ConversationViewController.swift */,
 				CC5E7B6E1DB7FD7E0021206C /* SettingsViewController.swift */,
 				CC825D7E1DBABB6C000D6CCB /* CreateAccountViewController.swift */,
+				CC91781C1DBE94CC00C33335 /* TermsViewController.swift */,
+				CC6AFE661DBEA0A100DBD0F4 /* GetStartedViewController.swift */,
 			);
 			path = "Carousel project";
 			sourceTree = "<group>";
@@ -283,8 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC91781D1DBE94CC00C33335 /* TermsViewController.swift in Sources */,
 				CC825D7F1DBABB6C000D6CCB /* CreateAccountViewController.swift in Sources */,
 				CC3067361DB514CF002EFB95 /* ViewController.swift in Sources */,
+				CC6AFE671DBEA0A100DBD0F4 /* GetStartedViewController.swift in Sources */,
 				CC3067621DB5150E002EFB95 /* Common.swift in Sources */,
 				CC5E7B6D1DB7FC640021206C /* ConversationViewController.swift in Sources */,
 				CC3067341DB514CF002EFB95 /* AppDelegate.swift in Sources */,

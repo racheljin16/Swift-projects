@@ -24,7 +24,7 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
     var xOffsets : [Float] = [-30, 75, -66, 10, -200, -15]
     var scales : [Float] = [1, 1.65, 1.7, 1.6, 1.65, 1.65]
     var rotations : [Float] = [-10, -10, 10, 10, 10, -10]
-    
+
     
     func updateViewTransformsWithOffset(offset: Float){
         let tiles = [tileView1,tileView2,tileView3,tileView4,tileView5,tileView6]
@@ -46,7 +46,7 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
     
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        // This method is called as the user scrolls
+ 
         let offset = Float(scrollView.contentOffset.y)
         // content offset = 0 -> 667
         updateViewTransformsWithOffset(offset: offset)
@@ -58,8 +58,7 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         scrollView.contentSize = imageView.frame.size
         scrollView.delegate = self
-
-        // Do any additional setup after loading the view.
+        scrollView.sendSubview(toBack:imageView)
     }
 
     override func didReceiveMemoryWarning() {

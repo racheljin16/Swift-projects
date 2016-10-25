@@ -13,6 +13,26 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBAction func onTapSignOut(_ sender: UIButton) {
+        let alertController = UIAlertController(title: "Sign Out", message: "Are you sure to sign out?", preferredStyle: .alert)
+        let logoutAction = UIAlertAction(title: "Sign Out", style: .destructive) {
+            (action) in
+            }
+
+        alertController.addAction(logoutAction)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+        }
+
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true) {
+        }
+        delay(2, closure: { () -> () in
+            self.performSegue(withIdentifier: "loginBackSegue", sender: nil)
+        })
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

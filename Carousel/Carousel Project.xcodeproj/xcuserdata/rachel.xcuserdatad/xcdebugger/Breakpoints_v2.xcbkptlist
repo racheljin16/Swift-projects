@@ -136,12 +136,106 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Carousel project/SettingsViewController.swift"
-            timestampString = "498598155.968213"
+            timestampString = "499044758.87187"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "onPressDismiss(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Carousel Project/CreateAccountViewController.swift"
+            timestampString = "499023784.940578"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "CreateAccountViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Carousel_project.CreateAccountViewController.fieldParentView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIView&gt;"
+                  moduleName = "Carousel project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rachel/github/Swift-projects/Carousel/Carousel%20Project/CreateAccountViewController.swift"
+                  timestampString = "499025942.774256"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Carousel_project.CreateAccountViewController.fieldParentView.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIView&gt;"
+                  moduleName = "Carousel project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rachel/github/Swift-projects/Carousel/Carousel%20Project/CreateAccountViewController.swift"
+                  timestampString = "499025942.776374"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Carousel_project.CreateAccountViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Carousel_project.CreateAccountViewController"
+                  moduleName = "Carousel project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rachel/github/Swift-projects/Carousel/Carousel%20Project/CreateAccountViewController.swift"
+                  timestampString = "499025942.778046"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "174">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Carousel_project.CreateAccountViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Carousel_project.CreateAccountViewController&gt;"
+                  moduleName = "Carousel project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rachel/github/Swift-projects/Carousel/Carousel%20Project/CreateAccountViewController.swift"
+                  timestampString = "499025942.779658"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Carousel Project/GetStartedViewController.swift"
+            timestampString = "499059668.676645"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "onTapBack(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

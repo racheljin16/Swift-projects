@@ -116,22 +116,16 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var loginNavBar: UIImageView!
     
     override func viewWillAppear(_ animated: Bool) {
-        // Set initial transform values 20% of original size
-        let transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
-        // Apply the transform properties of the views
+        let transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
         loginNavBar.transform = transform
         fieldParentView.transform = transform
-        // Set the alpha properties of the views to transparent
         loginNavBar.alpha = 0
         fieldParentView.alpha = 0
     }
     override func viewDidAppear(_ animated: Bool) {
-        //Animate the code within over 0.3 seconds...
-        UIView.animate(withDuration: 0.3) { () -> Void in
-            // Return the views transform properties to their default states.
+        UIView.animate(withDuration: 0.1) { () -> Void in
             self.fieldParentView.transform = CGAffineTransform.identity
             self.loginNavBar.transform = CGAffineTransform.identity
-            // Set the alpha properties of the views to fully opaque
             self.fieldParentView.alpha = 1
             self.loginNavBar.alpha = 1
         }
