@@ -1,4 +1,4 @@
-## Swift projects working with CodePath
+## Swift projects working with *CodePath*
 
 1. Tiptip
  - Pre-work
