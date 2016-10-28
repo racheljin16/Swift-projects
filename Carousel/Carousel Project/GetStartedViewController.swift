@@ -10,7 +10,9 @@ import UIKit
 
 class GetStartedViewController: UIViewController {
 
+    @IBOutlet weak var buttonImage: UIButton!
 
+    @IBOutlet weak var checkBoxButton: UIButton!
     
     @IBAction func onTapBack(_ sender: UIButton) {
 //navigationController!.popViewController(animated: true)
@@ -25,7 +27,7 @@ class GetStartedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//checkBoxButton.contentMode = .scaleAspectFill
         // Do any additional setup after loading the view.
     }
 
