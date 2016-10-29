@@ -26,6 +26,7 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
     var messageOriginalCenter: CGPoint!
     var leftOriginalCenter: CGPoint!
     var rightOriginalCenter: CGPoint!
+    var scrollOriginalCenter: CGPoint!
     
     
     override func viewDidLoad() {
@@ -49,12 +50,13 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
     @IBAction func didPanMessage(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: view)
         var velocity = sender.velocity(in: view)
-
+        let p = abs(translation.x)/60
         
         if sender.state == .began {
             messageOriginalCenter = messageImageView.center
             leftOriginalCenter = leftImageView.center
             rightOriginalCenter = rightImageView.center
+            scrollOriginalCenter = scrollView.center
             
         } else if sender.state == .changed {
             
@@ -62,6 +64,7 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
             
             if translation.x >= 0 && translation.x < 60{
                 
+                self.archiveIconView.alpha = p
                 self.yellowImageView.alpha = 0
                 self.brownImageView.alpha = 0
                 self.listIconView.alpha = 0
@@ -90,6 +93,7 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
                     }, completion: nil)
             }else if translation.x > -60 && translation.x <= 0 {
                 
+                self.laterIconView.alpha = p
                 self.redImageView.alpha = 0
                 self.greenImageView.alpha = 0
                 self.deleteIconView.alpha = 0
@@ -120,31 +124,74 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
 
         }else if sender.state == .ended {
             
-            if velocity.x > 0 {
+            if velocity.x > 0 && translation.x < 60 {
                 
                 UIView.animate(withDuration: 0.3, animations: {
                     self.leftImageView.center = CGPoint(x: 0, y: self.leftOriginalCenter.y)
                     self.messageImageView.center = self.messageOriginalCenter
-                    self.deleteIconView.alpha = 0
-                    self.archiveIconView.alpha = 0
-                    self.greenImageView.alpha = 1
-                    self.redImageView.alpha = 1
                     }, completion: nil)
-            }else if velocity.x <= 0{
+            }else if velocity.x > 0 && translation.x > 60 && translation.x < 260 {
+               
+                UIView.animate(withDuration: 1, animations: {
+                    self.leftImageView.center = CGPoint(x: 120, y: self.leftOriginalCenter.y)
+                    self.messageImageView.center = CGPoint(x: 375 + 120, y: self.leftOriginalCenter.y)
+                    }, completion: {(value: Bool) in
+                        UIView.animate(withDuration: 0.3, animations: {
+                            self.messageImageView.alpha = 0
+                            self.scrollView.center = CGPoint(x: self.scrollOriginalCenter.x, y: self.scrollOriginalCenter.y-100)
+                            self.leftImageView.alpha = 0
+                            self.rightImageView.alpha = 0
+                            }, completion: nil)
+                    })
+            }else if velocity.x > 0 && translation.x > 260 {
+                
+                UIView.animate(withDuration: 1, animations: {
+                    self.leftImageView.center = CGPoint(x: 150, y: self.leftOriginalCenter.y)
+                    self.messageImageView.center = CGPoint(x: 375 + 150, y: self.leftOriginalCenter.y)
+                    }, completion: {(value: Bool) in
+                        UIView.animate(withDuration: 0.3, animations: {
+                            self.messageImageView.alpha = 0
+                            self.scrollView.center = CGPoint(x: self.scrollOriginalCenter.x, y: self.scrollOriginalCenter.y-100)
+                            self.leftImageView.alpha = 0
+                            self.rightImageView.alpha = 0
+                            }, completion: nil)
+                })
+
+            }else if velocity.x < 0 && translation.x > -60 {
                 
                 UIView.animate(withDuration: 0.3, animations: {
-                    self.leftImageView.center = CGPoint(x: 0, y: self.leftOriginalCenter.y)
+                    self.rightImageView.center = CGPoint(x: 0, y: self.rightOriginalCenter.y)
                     self.messageImageView.center = self.messageOriginalCenter
-                    self.laterIconView.alpha = 0
-                    self.listIconView.alpha = 0
-                    self.yellowImageView.alpha = 1
-                    self.brownImageView.alpha = 1
                     }, completion: nil)
-            }
+            }else if velocity.x < 0 && translation.x < -60 && translation.x > -260 {
+                
+                UIView.animate(withDuration: 1, animations: {
+                    self.rightImageView.center = CGPoint(x: 375-120, y: self.rightOriginalCenter.y)
+                    self.messageImageView.center = CGPoint(x: -120, y: self.rightOriginalCenter.y)
+                    }, completion: {(value: Bool) in
+                        UIView.animate(withDuration: 0.3, animations: {
+                            self.messageImageView.alpha = 0
+                            self.scrollView.center = CGPoint(x: self.scrollOriginalCenter.x, y: self.scrollOriginalCenter.y-100)
+                            self.leftImageView.alpha = 0
+                            self.rightImageView.alpha = 0
+                            }, completion: nil)
+                })
+            }else if velocity.x < 0 && translation.x < -260 {
+                
+                UIView.animate(withDuration: 1, animations: {
+                    self.rightImageView.center = CGPoint(x: 375-150, y: self.rightOriginalCenter.y)
+                    self.messageImageView.center = CGPoint(x: -150, y: self.rightOriginalCenter.y)
+                    }, completion: {(value: Bool) in
+                        UIView.animate(withDuration: 0.3, animations: {
+                            self.messageImageView.alpha = 0
+                            self.scrollView.center = CGPoint(x: self.scrollOriginalCenter.x, y: self.scrollOriginalCenter.y-100)
+                            self.leftImageView.alpha = 0
+                            self.rightImageView.alpha = 0
+                            }, completion: nil)
+                })
             
-        }
-  
-    }
+            }
+
     
 
     /*
@@ -156,5 +203,6 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
         // Pass the selected object to the new view controller.
     }
     */
-
+        }
+}
 }
