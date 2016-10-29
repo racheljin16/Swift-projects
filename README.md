@@ -19,3 +19,7 @@
 5. Canvas
  - Week3 Lab work
  - A practice for gestures
+ 
+6. Mailbox
+ - Week3 assignment
+ - leverage animations and gestures to implement more sophisticated interactions
