@@ -21,6 +21,7 @@
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" image="feed" id="ZWV-jV-9DX">
                                         <rect key="frame" x="0.0" y="0.0" width="377" height="1418"/>
                                         <autoresizingMask key="autoresizingMask"/>
+                                        <gestureRecognizers/>
                                     </imageView>
                                     <view contentMode="scaleToFill" misplaced="YES" id="yGQ-HJ-E5L">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
@@ -108,6 +109,20 @@
                                 <frame key="frameInset" width="376" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" image="reschedule" id="Xbm-b3-u9F">
+                                <frame key="frameInset" minX="-375" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VJX-XM-zLa" appends="YES" id="nnI-yU-7po"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" image="list" id="rPR-Ga-HKG">
+                                <frame key="frameInset" minX="375" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="knM-zR-UXu" appends="YES" id="w1F-Yc-PKL"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -120,8 +135,10 @@
                         <outlet property="laterIconView" destination="K50-2y-lgq" id="gzn-hJ-tln"/>
                         <outlet property="leftImageView" destination="RfD-MB-ij0" id="56e-xS-Zsf"/>
                         <outlet property="listIconView" destination="Vbz-DQ-lpb" id="8SF-zt-vnY"/>
+                        <outlet property="listImageView" destination="rPR-Ga-HKG" id="eN4-3b-kCC"/>
                         <outlet property="messageImageView" destination="q1s-Ax-w4f" id="TgT-CE-JRm"/>
                         <outlet property="redImageView" destination="ND7-Kg-k82" id="vmH-PS-4Fr"/>
+                        <outlet property="rescheduleImageView" destination="Xbm-b3-u9F" id="cl7-P0-iah"/>
                         <outlet property="rightImageView" destination="a8j-wK-bO8" id="GTo-IJ-NQh"/>
                         <outlet property="scrollView" destination="tnO-Oi-wah" id="jd9-Lx-fPm"/>
                         <outlet property="yellowImageView" destination="UOb-2U-0eF" id="vWF-ym-Fjf"/>
@@ -133,6 +150,16 @@
                         <action selector="didPanMessage:" destination="BYZ-38-t0r" id="3bp-8w-7mM"/>
                     </connections>
                 </panGestureRecognizer>
+                <tapGestureRecognizer id="VJX-XM-zLa">
+                    <connections>
+                        <action selector="didTapReschedule:" destination="BYZ-38-t0r" id="6Bg-xJ-NhA"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="knM-zR-UXu">
+                    <connections>
+                        <action selector="onTapList:" destination="BYZ-38-t0r" id="g4K-Sk-xEh"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="68.5" y="143.5"/>
         </scene>
@@ -143,9 +170,11 @@
         <image name="feed" width="320" height="1202"/>
         <image name="help_label" width="320" height="37"/>
         <image name="later_nav_icon" width="25" height="20"/>
+        <image name="list" width="320" height="568"/>
         <image name="list_icon" width="25" height="25"/>
         <image name="message" width="320" height="86"/>
         <image name="nav" width="320" height="65"/>
+        <image name="reschedule" width="320" height="568"/>
         <image name="search" width="320" height="42"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

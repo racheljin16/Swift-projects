@@ -22,11 +22,15 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var brownImageView: UIView!
     @IBOutlet weak var listIconView: UIImageView!
     @IBOutlet weak var laterIconView: UIImageView!
+    @IBOutlet weak var rescheduleImageView: UIImageView!
+    @IBOutlet weak var listImageView: UIImageView!
     
     var messageOriginalCenter: CGPoint!
     var leftOriginalCenter: CGPoint!
     var rightOriginalCenter: CGPoint!
     var scrollOriginalCenter: CGPoint!
+    var rescheduleOriginalCenter: CGPoint!
+    var listOriginalCenter: CGPoint!
     
     
     override func viewDidLoad() {
@@ -40,6 +44,8 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
         archiveIconView.alpha = 0
         laterIconView.alpha = 0
         listIconView.alpha = 0
+        rescheduleImageView.alpha = 0
+        listImageView.alpha = 0
         
     }
 
@@ -57,6 +63,8 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
             leftOriginalCenter = leftImageView.center
             rightOriginalCenter = rightImageView.center
             scrollOriginalCenter = scrollView.center
+            rescheduleOriginalCenter = rescheduleImageView.center
+            listOriginalCenter = listImageView.center
             
         } else if sender.state == .changed {
             
@@ -132,7 +140,7 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
                     }, completion: nil)
             }else if velocity.x > 0 && translation.x > 60 && translation.x < 260 {
                
-                UIView.animate(withDuration: 1, animations: {
+                UIView.animate(withDuration: 0.3, animations: {
                     self.leftImageView.center = CGPoint(x: 120, y: self.leftOriginalCenter.y)
                     self.messageImageView.center = CGPoint(x: 375 + 120, y: self.leftOriginalCenter.y)
                     }, completion: {(value: Bool) in
@@ -165,44 +173,45 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
                     }, completion: nil)
             }else if velocity.x < 0 && translation.x < -60 && translation.x > -260 {
                 
-                UIView.animate(withDuration: 1, animations: {
-                    self.rightImageView.center = CGPoint(x: 375-120, y: self.rightOriginalCenter.y)
-                    self.messageImageView.center = CGPoint(x: -120, y: self.rightOriginalCenter.y)
-                    }, completion: {(value: Bool) in
-                        UIView.animate(withDuration: 0.3, animations: {
-                            self.messageImageView.alpha = 0
-                            self.scrollView.center = CGPoint(x: self.scrollOriginalCenter.x, y: self.scrollOriginalCenter.y-100)
-                            self.leftImageView.alpha = 0
-                            self.rightImageView.alpha = 0
-                            }, completion: nil)
-                })
+                self.rescheduleImageView.center = CGPoint(x: self.scrollOriginalCenter.x, y: self.rescheduleOriginalCenter.y)
+                self.rightImageView.center = self.rightOriginalCenter
+                self.messageImageView.center = self.messageOriginalCenter
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.rescheduleImageView.alpha = 1
+                    }, completion: nil)
             }else if velocity.x < 0 && translation.x < -260 {
                 
-                UIView.animate(withDuration: 1, animations: {
-                    self.rightImageView.center = CGPoint(x: 375-150, y: self.rightOriginalCenter.y)
-                    self.messageImageView.center = CGPoint(x: -150, y: self.rightOriginalCenter.y)
-                    }, completion: {(value: Bool) in
-                        UIView.animate(withDuration: 0.3, animations: {
-                            self.messageImageView.alpha = 0
-                            self.scrollView.center = CGPoint(x: self.scrollOriginalCenter.x, y: self.scrollOriginalCenter.y-100)
-                            self.leftImageView.alpha = 0
-                            self.rightImageView.alpha = 0
-                            }, completion: nil)
-                })
-            
+                self.listImageView.center = CGPoint(x: self.scrollOriginalCenter.x, y: self.listOriginalCenter.y)
+                self.rightImageView.center = self.rightOriginalCenter
+                self.messageImageView.center = self.messageOriginalCenter
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.listImageView.alpha = 1
+                    }, completion: nil)
             }
-
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
         }
-}
+    }
+    @IBAction func didTapReschedule(_ sender: UITapGestureRecognizer) {
+        UIView.animate(withDuration: 1, animations: {
+            self.rescheduleImageView.alpha = 0
+            }, completion: {(value: Bool) in
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.messageImageView.alpha = 0
+                    self.scrollView.center = CGPoint(x: self.scrollOriginalCenter.x, y: self.scrollOriginalCenter.y-100)
+                    self.leftImageView.alpha = 0
+                    self.rightImageView.alpha = 0
+                    }, completion: nil)
+        })
+    }
+    @IBAction func onTapList(_ sender: UITapGestureRecognizer) {
+        UIView.animate(withDuration: 1, animations: {
+            self.listImageView.alpha = 0
+            }, completion: {(value: Bool) in
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.messageImageView.alpha = 0
+                    self.scrollView.center = CGPoint(x: self.scrollOriginalCenter.x, y: self.scrollOriginalCenter.y-100)
+                    self.leftImageView.alpha = 0
+                    self.rightImageView.alpha = 0
+                    }, completion: nil)
+        })
+    }
 }
