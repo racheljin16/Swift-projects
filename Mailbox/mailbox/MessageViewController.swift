@@ -24,6 +24,8 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var laterIconView: UIImageView!
     @IBOutlet weak var rescheduleImageView: UIImageView!
     @IBOutlet weak var listImageView: UIImageView!
+    @IBOutlet weak var frontImageView: UIView!
+    @IBOutlet weak var menuImageView: UIImageView!
     
     var messageOriginalCenter: CGPoint!
     var leftOriginalCenter: CGPoint!
@@ -31,6 +33,7 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
     var scrollOriginalCenter: CGPoint!
     var rescheduleOriginalCenter: CGPoint!
     var listOriginalCenter: CGPoint!
+    var frontOriginalCenter: CGPoint!
     
     
     override func viewDidLoad() {
@@ -47,7 +50,51 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
         rescheduleImageView.alpha = 0
         listImageView.alpha = 0
         
+        let screenEdgePanGestureRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(MessageViewController.didScreenEdgePan(sender:)))
+        
+        // Configure the screen edges you want to detect.
+        screenEdgePanGestureRecognizer.edges = UIRectEdge.left
+        
+        // Attach the screen edge pan gesture recognizer to some view.
+        frontImageView.isUserInteractionEnabled = true
+        frontImageView.addGestureRecognizer(screenEdgePanGestureRecognizer)
     }
+    
+    func didScreenEdgePan(sender: UIScreenEdgePanGestureRecognizer) {
+        let edgeTranslation = sender.translation(in: view)
+        let edgeVelocity = sender.velocity(in: view)
+        
+        if sender.state == .began{
+            
+            frontOriginalCenter = frontImageView.center
+            
+        } else if sender.state == .changed{
+            
+            frontImageView.center = CGPoint(x: frontOriginalCenter.x + edgeTranslation.x, y: frontOriginalCenter.y)
+            
+        } else if sender.state == .ended{
+            let menuPanGesture = UIPanGestureRecognizer(target: self, action: ("onCloseMenuPan:"))
+            if edgeVelocity.x > 0 {
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.frontImageView.center = CGPoint(x: self.frontOriginalCenter.x + 375, y: self.frontOriginalCenter.y)
+                })
+            }else {
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.frontImageView.center = self.frontOriginalCenter
+                    self.frontImageView.addGestureRecognizer(menuPanGesture)
+                    }, completion: {(value: Bool) in
+                        UIView.animate(withDuration: 0.3,animations: {
+                        self.frontImageView.removeGestureRecognizer(menuPanGesture)
+                        }, completion: nil)
+                })
+            }
+        }
+    }
+    
+ 
+    
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -214,4 +261,8 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
                     }, completion: nil)
         })
     }
+    
 }
+        
+
+
