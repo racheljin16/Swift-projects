@@ -28,3 +28,13 @@ Time spent: **11** hours spent in total
   - If the menu is being revealed when the user lifts their finger, it should continue revealing.
   - If the menu is being hidden when the user lifts their finger, it should continue hiding.
 2. Tapping the segmented control in the title should swipe views in from the left or right.
+
+##### Video Walkthrough 
+- Here's a walkthrough of implemented user stories:
+
+<a href="mailbox-demo.gif" target="_blank"><img src='mailbox-demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /></a>
+
+
+##### Notes
+- Spent some time on debugging edge pan the menu, then I found out one direction of it is edge pan, and sliding it back is just normal pan.
+- Spent some time on the segmented control setting. The key is to set the content a scroll view.
