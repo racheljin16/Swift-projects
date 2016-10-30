@@ -26,6 +26,12 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var listImageView: UIImageView!
     @IBOutlet weak var frontImageView: UIView!
     @IBOutlet weak var menuImageView: UIImageView!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var scrollContentView: UIScrollView!
+    @IBOutlet weak var leftContentView: UIImageView!
+    @IBOutlet weak var rightContentView: UIImageView!
+
     
     var messageOriginalCenter: CGPoint!
     var leftOriginalCenter: CGPoint!
@@ -34,6 +40,8 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
     var rescheduleOriginalCenter: CGPoint!
     var listOriginalCenter: CGPoint!
     var frontOriginalCenter: CGPoint!
+    var contentOriginalCenter: CGPoint!
+
     
     
     override func viewDidLoad() {
@@ -42,6 +50,9 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
         // Do any additional setup after loading the view.
         scrollView.delegate = self
         scrollView.contentSize = feedImageView.frame.size
+        
+        scrollContentView.delegate = self
+        scrollContentView.contentSize = contentView.frame.size
         
         deleteIconView.alpha = 0
         archiveIconView.alpha = 0
@@ -62,7 +73,6 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
     
     func didScreenEdgePan(sender: UIScreenEdgePanGestureRecognizer) {
         let edgeTranslation = sender.translation(in: view)
-        let edgeVelocity = sender.velocity(in: view)
         
         if sender.state == .began{
             
@@ -73,28 +83,31 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
             frontImageView.center = CGPoint(x: frontOriginalCenter.x + edgeTranslation.x, y: frontOriginalCenter.y)
             
         } else if sender.state == .ended{
-            let menuPanGesture = UIPanGestureRecognizer(target: self, action: ("onCloseMenuPan:"))
-            if edgeVelocity.x > 0 {
+                self.leftContentView.alpha = 0
                 UIView.animate(withDuration: 0.3, animations: {
-                    self.frontImageView.center = CGPoint(x: self.frontOriginalCenter.x + 375, y: self.frontOriginalCenter.y)
-                })
-            }else {
-                UIView.animate(withDuration: 0.3, animations: {
-                    self.frontImageView.center = self.frontOriginalCenter
-                    self.frontImageView.addGestureRecognizer(menuPanGesture)
-                    }, completion: {(value: Bool) in
-                        UIView.animate(withDuration: 0.3,animations: {
-                        self.frontImageView.removeGestureRecognizer(menuPanGesture)
-                        }, completion: nil)
-                })
-            }
+                    self.frontImageView.center = CGPoint(x: 512.5, y: self.frontOriginalCenter.y)
+                self.frontImageView.addGestureRecognizer(sender)
+                    }, completion: nil)
+                }
         }
-    }
-    
- 
-    
     
 
+    @IBAction func didPanFrontView(_ sender: UIPanGestureRecognizer) {
+        let panTranslation = sender.translation(in: view)
+                UIView.animate(withDuration: 0.3, animations: {
+                    if sender.state == .began{
+                        self.frontOriginalCenter = self.frontImageView.center
+                    } else if sender.state == .changed{
+                        self.frontImageView.center = CGPoint(x: self.frontOriginalCenter.x + panTranslation.x, y: self.frontOriginalCenter.y)
+                    } else if sender.state == .ended{
+                        self.leftContentView.alpha = 1
+                        UIView.animate(withDuration: 0.3, animations: {
+                            self.frontImageView.center = CGPoint(x: 187.5, y: self.frontOriginalCenter.y)
+                            }, completion: nil)
+                    }
+
+            }, completion: nil)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -262,7 +275,24 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
         })
     }
     
-}
-        
+    @IBAction func OnTapSegmentedControl(_ sender: UISegmentedControl) {
 
+        if segmentedControl.selectedSegmentIndex == 0 {
+            UIView.animate(withDuration: 0.3, animations: {
+                self.scrollContentView.contentOffset.x = -375
+                }, completion: nil)
+        }else if segmentedControl.selectedSegmentIndex == 1 {
+            UIView.animate(withDuration: 0.3, animations: {
+                self.scrollContentView.contentOffset.x = 0
+                }, completion: nil)
+        }else if segmentedControl.selectedSegmentIndex == 2 {
+            UIView.animate(withDuration: 0.3, animations: {
+                self.scrollContentView.contentOffset.x = 375
+                }, completion: nil)
+            
+        }
+ 
+    }
+        
+}
 
