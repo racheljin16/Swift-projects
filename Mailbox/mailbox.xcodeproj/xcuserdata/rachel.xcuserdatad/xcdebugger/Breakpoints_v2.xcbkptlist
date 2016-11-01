@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mailbox/MessageViewController.swift"
-            timestampString = "499503821.785241"
+            timestampString = "499652049.840478"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "288"
-            endingLineNumber = "288"
+            startingLineNumber = "308"
+            endingLineNumber = "308"
             landmarkName = "OnTapSegmentedControl(_:)"
             landmarkType = "7">
          </BreakpointContent>

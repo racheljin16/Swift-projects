@@ -71,6 +71,26 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
         frontImageView.addGestureRecognizer(screenEdgePanGestureRecognizer)
     }
     
+    override var canBecomeFirstResponder: Bool {
+        return true
+    }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        let alertController = UIAlertController(title: "Undo Deleting", message: "", preferredStyle: .alert)
+        let undoAction = UIAlertAction(title: "Undo", style: .destructive) {
+            (action) in
+        }
+        
+        alertController.addAction(undoAction)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+        }
+        
+        alertController.addAction(cancelAction)
+        self.present(alertController, animated: true) {
+        }
+    }
+    
     func didScreenEdgePan(sender: UIScreenEdgePanGestureRecognizer) {
         let edgeTranslation = sender.translation(in: view)
         
