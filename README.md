@@ -23,3 +23,7 @@
 6. Mailbox
  - Week3 assignment
  - leverage animations and gestures to implement more sophisticated interactions
+
+7. Tumblr
+ - Week4 assignment
+ - leverage animations and gestures to create custom navigation
