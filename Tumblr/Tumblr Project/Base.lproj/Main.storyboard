@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OXt-FB-gn5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="OXt-FB-gn5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,24 +13,20 @@
         <scene sceneID="CyS-eF-Z1m">
             <objects>
                 <viewController id="OXt-FB-gn5" customClass="MainViewController" customModule="Tumblr_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="etI-MP-whN"/>
-                        <viewControllerLayoutGuide type="bottom" id="Okf-8I-zDA"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="g5O-xv-xpe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8au-jW-6TP">
+                            <view contentMode="scaleToFill" id="8au-jW-6TP">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kis-Qz-vEG">
+                            <view contentMode="scaleToFill" id="kis-Qz-vEG">
                                 <rect key="frame" x="0.0" y="611" width="375" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJl-jF-4bn">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sJl-jF-4bn">
                                         <rect key="frame" x="20" y="0.0" width="56" height="56"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="home_icon"/>
@@ -38,7 +34,7 @@
                                             <action selector="didPressTab:" destination="OXt-FB-gn5" eventType="touchUpInside" id="lGc-lv-OeI"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbF-9U-40I">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZbF-9U-40I">
                                         <rect key="frame" x="89" y="0.0" width="56" height="56"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="search_icon"/>
@@ -46,7 +42,7 @@
                                             <action selector="didPressTab:" destination="OXt-FB-gn5" eventType="touchUpInside" id="B4y-Os-sWg"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngI-5w-j3o">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ngI-5w-j3o">
                                         <rect key="frame" x="237" y="0.0" width="56" height="56"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="account_icon"/>
@@ -54,7 +50,7 @@
                                             <action selector="didPressTab:" destination="OXt-FB-gn5" eventType="touchUpInside" id="yqN-lq-2gx"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jF3-om-N2h">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jF3-om-N2h">
                                         <rect key="frame" x="306" y="0.0" width="56" height="56"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="trending_icon"/>
@@ -62,7 +58,7 @@
                                             <action selector="didPressTab:" destination="OXt-FB-gn5" eventType="touchUpInside" id="NS3-Ez-kfr"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYM-cs-mwU">
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MYM-cs-mwU">
                                         <rect key="frame" x="163" y="0.0" width="56" height="56"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="compose_button"/>
@@ -83,33 +79,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="suX-Qw-16C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="940" y="1475.7121439280361"/>
+            <point key="canvasLocation" x="587.5" y="1640.5"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="k4q-uh-9nl">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="yYe-g4-kmm" customClass="HomeViewController" customModule="Tumblr_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Jt0-2c-iC7"/>
-                        <viewControllerLayoutGuide type="bottom" id="4G5-Aa-qpq"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ILc-7h-Igu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="PUD-om-iGp">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="611"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="home" id="SPY-My-MyJ">
+                                <rect key="frame" x="-1" y="0.0" width="378" height="618"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="home_spinner" translatesAutoresizingMaskIntoConstraints="NO" id="gOb-XK-nfz">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="home_spinner" id="gOb-XK-nfz">
                                 <rect key="frame" x="114" y="200" width="146" height="146"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="home_overlay" translatesAutoresizingMaskIntoConstraints="NO" id="Yuq-y4-ABQ">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="home_overlay" id="Yuq-y4-ABQ">
                                 <rect key="frame" x="27" y="364" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzA-VR-4h8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WzA-VR-4h8">
                                 <rect key="frame" x="305" y="28" width="64" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
@@ -119,21 +111,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9eS-Nz-gnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1821.5999999999999" y="1475.7121439280361"/>
+            <point key="canvasLocation" x="1138.5" y="1640.5"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="49X-QD-w5V">
             <objects>
                 <viewController storyboardIdentifier="SearchViewController" id="cXk-Rm-l5u" customClass="SearchViewController" customModule="Tumblr_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FpH-Lv-wuE"/>
-                        <viewControllerLayoutGuide type="bottom" id="PUI-jY-EI7"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wL4-NH-G5h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="search_feed" translatesAutoresizingMaskIntoConstraints="NO" id="O93-ya-5U7">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="search_feed" id="O93-ya-5U7">
                                 <rect key="frame" x="0.0" y="0.0" width="376" height="616"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -143,53 +131,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JOE-r6-mH8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2645.5999999999999" y="1475.7121439280361"/>
+            <point key="canvasLocation" x="1653.5" y="1640.5"/>
         </scene>
         <!--Compose View Controller-->
         <scene sceneID="ELi-nH-jPx">
             <objects>
                 <viewController storyboardIdentifier="ComposeViewController" id="foC-54-YUf" customClass="ComposeViewController" customModule="Tumblr_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="q9N-OD-uVk"/>
-                        <viewControllerLayoutGuide type="bottom" id="Fr1-xW-Oj5"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LEG-Lo-OpN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dW9-vl-Zaz">
+                            <view contentMode="scaleToFill" id="dW9-vl-Zaz">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="nevermind" translatesAutoresizingMaskIntoConstraints="NO" id="rtg-sj-WoJ">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="nevermind" id="rtg-sj-WoJ">
                                         <rect key="frame" x="0.0" y="605" width="374" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fj-ak-Cct">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8fj-ak-Cct">
                                         <rect key="frame" x="8" y="605" width="366" height="62"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </button>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="chat_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ujZ-gr-kbw">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="chat_icon" id="ujZ-gr-kbw">
                                         <rect key="frame" x="150" y="800" width="75" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="video_icon" translatesAutoresizingMaskIntoConstraints="NO" id="2hn-6L-eXp">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="video_icon" id="2hn-6L-eXp">
                                         <rect key="frame" x="267" y="800" width="75" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="text_icon" translatesAutoresizingMaskIntoConstraints="NO" id="0LT-7R-yaD">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="text_icon" id="0LT-7R-yaD">
                                         <rect key="frame" x="34" y="700" width="75" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="photo_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Zzu-Ll-SrC">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="photo_icon" id="Zzu-Ll-SrC">
                                         <rect key="frame" x="149" y="700" width="75" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="quote_icon" translatesAutoresizingMaskIntoConstraints="NO" id="8XG-kU-GBt">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="quote_icon" id="8XG-kU-GBt">
                                         <rect key="frame" x="266" y="700" width="75" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="link_icon" translatesAutoresizingMaskIntoConstraints="NO" id="7Ea-Th-OXh">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="link_icon" id="7Ea-Th-OXh">
                                         <rect key="frame" x="35" y="800" width="75" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
@@ -202,21 +186,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mR-Fr-TJt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3445.5999999999999" y="1475.7121439280361"/>
+            <point key="canvasLocation" x="2153.5" y="1640.5"/>
         </scene>
         <!--Account View Controller-->
         <scene sceneID="J0a-ep-fXG">
             <objects>
                 <viewController storyboardIdentifier="AccountViewController" id="bQ4-vl-ijH" customClass="AccountViewController" customModule="Tumblr_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="PZn-eq-raL"/>
-                        <viewControllerLayoutGuide type="bottom" id="zBw-Ok-heu"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZpE-Vc-IFl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="account" translatesAutoresizingMaskIntoConstraints="NO" id="n3N-2g-40y">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="account" id="n3N-2g-40y">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="615"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -226,26 +206,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="daX-U2-uY0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4151.1999999999998" y="1475.7121439280361"/>
+            <point key="canvasLocation" x="2594.5" y="1640.5"/>
         </scene>
         <!--Trending View Controller-->
         <scene sceneID="pe9-nN-GnV">
             <objects>
-                <viewController storyboardIdentifier="TrendingViewController" id="Ch1-eI-lhw" customClass="TrendingViewController" customModule="Tumblr_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jDM-uS-TQ2"/>
-                        <viewControllerLayoutGuide type="bottom" id="tuz-q1-3Bw"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PYG-Az-Xd3">
+                <viewController storyboardIdentifier="TrendingViewController" automaticallyAdjustsScrollViewInsets="NO" id="Ch1-eI-lhw" customClass="TrendingViewController" customModule="Tumblr_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="PYG-Az-Xd3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E51-jJ-e4q">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="611"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Z7o-N8-leG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1211"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="trending_feed" translatesAutoresizingMaskIntoConstraints="NO" id="rsm-IE-S9E">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1428"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="trending_feed" id="vDM-Jj-sFs">
+                                        <rect key="frame" x="0.0" y="-2" width="375" height="1428"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
@@ -253,14 +229,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
-                        <outlet property="scrollView" destination="E51-jJ-e4q" id="J4r-nZ-nSU"/>
-                        <outlet property="trendingImageView" destination="rsm-IE-S9E" id="WBf-V2-Apu"/>
+                        <outlet property="scrollView" destination="Z7o-N8-leG" id="2x8-td-bI3"/>
+                        <outlet property="trendingImageView" destination="vDM-Jj-sFs" id="Zgo-C4-htY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZgD-pv-8Pv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4930.3999999999996" y="1475.7121439280361"/>
+            <point key="canvasLocation" x="3081.5" y="1640.5"/>
         </scene>
     </scenes>
     <resources>
@@ -283,4 +261,9 @@
         <image name="trending_icon" width="35" height="35"/>
         <image name="video_icon" width="75" height="95"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>

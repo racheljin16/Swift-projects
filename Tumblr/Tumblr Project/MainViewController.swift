@@ -32,7 +32,7 @@ class MainViewController: UIViewController {
         TrendingViewController = storyboard.instantiateViewController(withIdentifier: "TrendingViewController")
         AccountViewController = storyboard.instantiateViewController(withIdentifier: "AccountViewController")
         
-        ViewControllers = [HomeViewController,SearchViewController,TrendingViewController,AccountViewController]
+        ViewControllers = [HomeViewController,SearchViewController,AccountViewController,TrendingViewController]
         
         buttons[selectedIndex].isSelected = true
         didPressTab(buttons[selectedIndex])
