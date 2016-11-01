@@ -2,7 +2,7 @@
 
 The purpose of this homework is to leverage animations and gestures to implement more sophisticated interactions. We're going to use the techniques from this week to implement the Mailbox interactions.
 
-Time spent: **11** hours spent in total 
+Time spent: **12** hours spent in total 
 
 ### Features
 
@@ -35,7 +35,3 @@ Time spent: **11** hours spent in total
 
 <a href="mailbox-demo.gif" target="_blank"><img src='mailbox-demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /></a>
 
-
-##### Notes
-- Spent some time on debugging edge pan the menu, then I found out one direction of it is edge pan, and sliding it back is just normal pan.
-- Spent some time on the segmented control setting. The key is to set the content a scroll view.
