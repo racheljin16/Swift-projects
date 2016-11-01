@@ -47,7 +47,6 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         scrollView.delegate = self
         scrollView.contentSize = feedImageView.frame.size
         
@@ -61,6 +60,7 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
         rescheduleImageView.alpha = 0
         listImageView.alpha = 0
         
+        //Configure Edge Pan Gesture
         let screenEdgePanGestureRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(MessageViewController.didScreenEdgePan(sender:)))
         
         // Configure the screen edges you want to detect.
@@ -71,6 +71,7 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
         frontImageView.addGestureRecognizer(screenEdgePanGestureRecognizer)
     }
     
+    // Gesture for shake-to-undo
     override var canBecomeFirstResponder: Bool {
         return true
     }
@@ -91,6 +92,7 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
+    //Gesture for Edge Pan offset
     func didScreenEdgePan(sender: UIScreenEdgePanGestureRecognizer) {
         let edgeTranslation = sender.translation(in: view)
         
@@ -111,7 +113,8 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
                 }
         }
     
-
+    
+    //Edge Pan backward
     @IBAction func didPanFrontView(_ sender: UIPanGestureRecognizer) {
         let panTranslation = sender.translation(in: view)
                 UIView.animate(withDuration: 0.3, animations: {
@@ -133,6 +136,8 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //Gesture for sliding left&right
     @IBAction func didPanMessage(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: view)
         var velocity = sender.velocity(in: view)
@@ -270,6 +275,7 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
             }
         }
     }
+    
     @IBAction func didTapReschedule(_ sender: UITapGestureRecognizer) {
         UIView.animate(withDuration: 1, animations: {
             self.rescheduleImageView.alpha = 0
@@ -282,6 +288,7 @@ class MessageViewController: UIViewController, UIScrollViewDelegate {
                     }, completion: nil)
         })
     }
+    
     @IBAction func onTapList(_ sender: UITapGestureRecognizer) {
         UIView.animate(withDuration: 1, animations: {
             self.listImageView.alpha = 0
