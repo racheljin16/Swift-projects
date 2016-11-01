@@ -28,6 +28,7 @@ Time spent: **11** hours spent in total
   - If the menu is being revealed when the user lifts their finger, it should continue revealing.
   - If the menu is being hidden when the user lifts their finger, it should continue hiding.
 2. Tapping the segmented control in the title should swipe views in from the left or right.
+3. Shake to undo.
 
 ##### Video Walkthrough 
 - Here's a walkthrough of implemented user stories:
