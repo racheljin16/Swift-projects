@@ -11,7 +11,10 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var bubbleView: UIImageView!
     @IBOutlet var buttons: [UIButton]!
+    
+    var fadeTransition: FadeTransition!
     
     var HomeViewController: UIViewController!
     var SearchViewController: UIViewController!
@@ -36,6 +39,12 @@ class MainViewController: UIViewController {
         
         buttons[selectedIndex].isSelected = true
         didPressTab(buttons[selectedIndex])
+        
+        UIView.animate(withDuration:0.8, delay: 0.0,
+
+            options: [.autoreverse,.repeat], animations: { () -> Void in
+                self.bubbleView.transform = CGAffineTransform(translationX: 0, y: 10)
+        }, completion: nil)
         
     }
     
@@ -62,15 +71,29 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        // Access the ViewController that you will be transitioning too, a.k.a, the destinationViewController.
+        var destinationViewController = segue.destination
+        
+        // Set the modal presentation style of your destinationViewController to be custom.
+        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.custom
+        
+        // Create a new instance of your fadeTransition.
+        fadeTransition = FadeTransition()
+        
+        // Tell the destinationViewController's  transitioning delegate to look in fadeTransition for transition instructions.
+        destinationViewController.transitioningDelegate = fadeTransition
+        
+        // Adjust the transition duration. (seconds)
+        fadeTransition.duration = 1.0
     }
-    */
+
+    @IBAction func didTapSearch(_ sender: UIButton) {
+        bubbleView.removeFromSuperview()
+    }
+    
+
+    
 
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC1156331DCFF06B0057E610 /* LogInFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1156321DCFF06B0057E610 /* LogInFormViewController.swift */; };
 		CC5A45EC1DC9025700F45999 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5A45EB1DC9025700F45999 /* AppDelegate.swift */; };
 		CC5A45EE1DC9025700F45999 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5A45ED1DC9025700F45999 /* ViewController.swift */; };
 		CC5A45F11DC9025700F45999 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5A45EF1DC9025700F45999 /* Main.storyboard */; };
@@ -20,6 +21,8 @@
 		CC5A46201DC92C6700F45999 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5A461F1DC92C6700F45999 /* ComposeViewController.swift */; };
 		CC5A46241DC92CE300F45999 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5A46231DC92CE300F45999 /* AccountViewController.swift */; };
 		CC5A46261DC92D7600F45999 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5A46251DC92D7600F45999 /* TrendingViewController.swift */; };
+		CC5A46671DC9922300F45999 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5A46651DC9922300F45999 /* BaseTransition.swift */; };
+		CC5A46681DC9922300F45999 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5A46661DC9922300F45999 /* FadeTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC1156321DCFF06B0057E610 /* LogInFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInFormViewController.swift; sourceTree = "<group>"; };
 		CC5A45E81DC9025700F45999 /* Tumblr Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tumblr Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5A45EB1DC9025700F45999 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC5A45ED1DC9025700F45999 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 		CC5A461F1DC92C6700F45999 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		CC5A46231DC92CE300F45999 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		CC5A46251DC92D7600F45999 /* TrendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		CC5A46651DC9922300F45999 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		CC5A46661DC9922300F45999 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,9 +124,12 @@
 				CC5A45F71DC9025700F45999 /* Info.plist */,
 				CC5A46191DC9229600F45999 /* MainViewController.swift */,
 				CC5A461B1DC9291C00F45999 /* HomeViewController.swift */,
+				CC5A46651DC9922300F45999 /* BaseTransition.swift */,
+				CC5A46661DC9922300F45999 /* FadeTransition.swift */,
 				CC5A461D1DC929B700F45999 /* SearchViewController.swift */,
 				CC5A461F1DC92C6700F45999 /* ComposeViewController.swift */,
 				CC5A46251DC92D7600F45999 /* TrendingViewController.swift */,
+				CC1156321DCFF06B0057E610 /* LogInFormViewController.swift */,
 			);
 			path = "Tumblr Project";
 			sourceTree = "<group>";
@@ -281,7 +290,10 @@
 				CC5A46261DC92D7600F45999 /* TrendingViewController.swift in Sources */,
 				CC5A461A1DC9229600F45999 /* MainViewController.swift in Sources */,
 				CC5A46241DC92CE300F45999 /* AccountViewController.swift in Sources */,
+				CC1156331DCFF06B0057E610 /* LogInFormViewController.swift in Sources */,
+				CC5A46671DC9922300F45999 /* BaseTransition.swift in Sources */,
 				CC5A45EE1DC9025700F45999 /* ViewController.swift in Sources */,
+				CC5A46681DC9922300F45999 /* FadeTransition.swift in Sources */,
 				CC5A46201DC92C6700F45999 /* ComposeViewController.swift in Sources */,
 				CC5A45EC1DC9025700F45999 /* AppDelegate.swift in Sources */,
 				CC5A461C1DC9291C00F45999 /* HomeViewController.swift in Sources */,
