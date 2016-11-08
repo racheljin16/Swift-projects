@@ -27,3 +27,7 @@
 7. Tumblr
  - Week4 assignment
  - leverage animations and gestures to create custom navigation
+
+8. Facebook
+ - Week5 assignment
+ - leverage animations and gestures to transition between screens
