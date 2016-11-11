@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC2FF3291DD41DE50024FC69 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF3271DD41DE50024FC69 /* BaseTransition.swift */; };
+		CC2FF32A1DD41DE50024FC69 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF3281DD41DE50024FC69 /* FadeTransition.swift */; };
+		CC2FF32C1DD41E0F0024FC69 /* LightBoxTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF32B1DD41E0F0024FC69 /* LightBoxTransition.swift */; };
+		CC2FF32E1DD4F9660024FC69 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF32D1DD4F9660024FC69 /* PhotoViewController.swift */; };
+		CC2FF3301DD53CCF0024FC69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2FF32F1DD53CCF0024FC69 /* Main.storyboard */; };
 		CC6B49BF1DD24FEE00219040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B49BE1DD24FEE00219040 /* AppDelegate.swift */; };
 		CC6B49C11DD24FEE00219040 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B49C01DD24FEE00219040 /* ViewController.swift */; };
-		CC6B49C41DD24FEE00219040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6B49C21DD24FEE00219040 /* Main.storyboard */; };
 		CC6B49C61DD24FEE00219040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6B49C51DD24FEE00219040 /* Assets.xcassets */; };
 		CC6B49C91DD24FEE00219040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6B49C71DD24FEE00219040 /* LaunchScreen.storyboard */; };
 		CC6B49D41DD24FEE00219040 /* FacebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B49D31DD24FEE00219040 /* FacebookTests.swift */; };
@@ -21,7 +25,6 @@
 		CC6B49F51DD2536100219040 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B49F41DD2536100219040 /* SettingsViewController.swift */; };
 		CC6B49F71DD261FE00219040 /* FeedDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B49F61DD261FE00219040 /* FeedDetailsViewController.swift */; };
 		CC6B49F91DD2620C00219040 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B49F81DD2620C00219040 /* StatusViewController.swift */; };
-		CC6B49FB1DD2621500219040 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B49FA1DD2621500219040 /* PhotosViewController.swift */; };
 		CC6B49FD1DD2621D00219040 /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B49FC1DD2621D00219040 /* CheckInViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,10 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC2FF3271DD41DE50024FC69 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		CC2FF3281DD41DE50024FC69 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		CC2FF32B1DD41E0F0024FC69 /* LightBoxTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightBoxTransition.swift; sourceTree = "<group>"; };
+		CC2FF32D1DD4F9660024FC69 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		CC2FF32F1DD53CCF0024FC69 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CC6B49BB1DD24FEE00219040 /* Facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6B49BE1DD24FEE00219040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC6B49C01DD24FEE00219040 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CC6B49C31DD24FEE00219040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC6B49C51DD24FEE00219040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC6B49C81DD24FEE00219040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC6B49CA1DD24FEE00219040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,7 +70,6 @@
 		CC6B49F41DD2536100219040 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CC6B49F61DD261FE00219040 /* FeedDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDetailsViewController.swift; sourceTree = "<group>"; };
 		CC6B49F81DD2620C00219040 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
-		CC6B49FA1DD2621500219040 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		CC6B49FC1DD2621D00219040 /* CheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,10 +123,10 @@
 			children = (
 				CC6B49BE1DD24FEE00219040 /* AppDelegate.swift */,
 				CC6B49C01DD24FEE00219040 /* ViewController.swift */,
-				CC6B49C21DD24FEE00219040 /* Main.storyboard */,
 				CC6B49C51DD24FEE00219040 /* Assets.xcassets */,
 				CC6B49C71DD24FEE00219040 /* LaunchScreen.storyboard */,
 				CC6B49CA1DD24FEE00219040 /* Info.plist */,
+				CC2FF32D1DD4F9660024FC69 /* PhotoViewController.swift */,
 				CC6B49EC1DD2532700219040 /* FeedViewController.swift */,
 				CC6B49EE1DD2534300219040 /* FriendsViewController.swift */,
 				CC6B49F01DD2534D00219040 /* MessageViewController.swift */,
@@ -128,8 +134,11 @@
 				CC6B49F41DD2536100219040 /* SettingsViewController.swift */,
 				CC6B49F61DD261FE00219040 /* FeedDetailsViewController.swift */,
 				CC6B49F81DD2620C00219040 /* StatusViewController.swift */,
-				CC6B49FA1DD2621500219040 /* PhotosViewController.swift */,
 				CC6B49FC1DD2621D00219040 /* CheckInViewController.swift */,
+				CC2FF3271DD41DE50024FC69 /* BaseTransition.swift */,
+				CC2FF3281DD41DE50024FC69 /* FadeTransition.swift */,
+				CC2FF32B1DD41E0F0024FC69 /* LightBoxTransition.swift */,
+				CC2FF32F1DD53CCF0024FC69 /* Main.storyboard */,
 			);
 			path = Facebook;
 			sourceTree = "<group>";
@@ -259,9 +268,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2FF3301DD53CCF0024FC69 /* Main.storyboard in Resources */,
 				CC6B49C91DD24FEE00219040 /* LaunchScreen.storyboard in Resources */,
 				CC6B49C61DD24FEE00219040 /* Assets.xcassets in Resources */,
-				CC6B49C41DD24FEE00219040 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC6B49EF1DD2534300219040 /* FriendsViewController.swift in Sources */,
+				CC2FF3291DD41DE50024FC69 /* BaseTransition.swift in Sources */,
 				CC6B49C11DD24FEE00219040 /* ViewController.swift in Sources */,
 				CC6B49F51DD2536100219040 /* SettingsViewController.swift in Sources */,
 				CC6B49F71DD261FE00219040 /* FeedDetailsViewController.swift in Sources */,
@@ -296,7 +306,9 @@
 				CC6B49F91DD2620C00219040 /* StatusViewController.swift in Sources */,
 				CC6B49F11DD2534D00219040 /* MessageViewController.swift in Sources */,
 				CC6B49FD1DD2621D00219040 /* CheckInViewController.swift in Sources */,
-				CC6B49FB1DD2621500219040 /* PhotosViewController.swift in Sources */,
+				CC2FF32A1DD41DE50024FC69 /* FadeTransition.swift in Sources */,
+				CC2FF32C1DD41E0F0024FC69 /* LightBoxTransition.swift in Sources */,
+				CC2FF32E1DD4F9660024FC69 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,14 +344,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CC6B49C21DD24FEE00219040 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CC6B49C31DD24FEE00219040 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CC6B49C71DD24FEE00219040 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -539,6 +543,7 @@
 				CC6B49E51DD24FEE00219040 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC6B49E61DD24FEE00219040 /* Build configuration list for PBXNativeTarget "FacebookTests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +552,7 @@
 				CC6B49E81DD24FEE00219040 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC6B49E91DD24FEE00219040 /* Build configuration list for PBXNativeTarget "FacebookUITests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +561,7 @@
 				CC6B49EB1DD24FEE00219040 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
