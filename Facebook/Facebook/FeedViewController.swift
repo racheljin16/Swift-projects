@@ -13,7 +13,6 @@ class FeedViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIView!
     var lightBoxTransition: LightBoxTransition!
-    var fadeTransition: FadeTransition!
     var selectedImageView: UIImageView!
 
 
@@ -21,7 +20,6 @@ class FeedViewController: UIViewController {
         super.viewDidLoad()
         scrollView.contentSize = imageView.frame.size
         lightBoxTransition = LightBoxTransition()
-        fadeTransition = FadeTransition()
     }
 
     override func didReceiveMemoryWarning() {
