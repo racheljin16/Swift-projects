@@ -27,8 +27,8 @@ class LightBoxTransition: BaseTransition {
         blackView.alpha = 0
         fromViewController.view.addSubview(blackView)
         
-        UIView.animate(withDuration: 0.3, animations: {
-            self.blackView.alpha = 0.8
+        UIView.animate(withDuration: 0.5, animations: {
+            self.blackView.alpha = 0.9
             
             toViewController.view.alpha = 1
             toViewController.view.transform = CGAffineTransform(scaleX: 1, y: 1)
@@ -41,10 +41,10 @@ class LightBoxTransition: BaseTransition {
         
         fromViewController.view.transform = CGAffineTransform(scaleX: 1, y: 1)
         
-        blackView.alpha = 0.8
+        blackView.alpha = 0.9
         fromViewController.view.alpha = 1
         
-        UIView.animate(withDuration: 0.3, animations: {
+        UIView.animate(withDuration: 0.5, animations: {
             self.blackView.alpha = 0
             fromViewController.view.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
             fromViewController.view.alpha = 0
