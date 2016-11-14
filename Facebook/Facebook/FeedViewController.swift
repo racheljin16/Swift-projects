@@ -37,6 +37,7 @@ class FeedViewController: UIViewController {
         scrollView.scrollIndicatorInsets.bottom = 50
         
     }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -44,13 +45,13 @@ class FeedViewController: UIViewController {
         destinationVC.image = self.selectedImageView.image
         destinationVC.modalPresentationStyle = .custom
         destinationVC.transitioningDelegate = self.lightBoxTransition
-        lightBoxTransition.duration = 1
     }
         
 
     @IBAction func onTapPhoto(_ sender: UITapGestureRecognizer) {
         selectedImageView = sender.view as! UIImageView
         performSegue(withIdentifier: "toPhotoSegue", sender: nil)
+        selectedImageView.frame = sender.view!.frame
     }
 
 }
