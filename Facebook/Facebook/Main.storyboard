@@ -180,7 +180,7 @@
         <!--Photo View Controller-->
         <scene sceneID="uQD-WD-WTo">
             <objects>
-                <viewController id="k2c-E5-mTK" customClass="PhotoViewController" customModule="Facebook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="photoViewController" id="k2c-E5-mTK" customClass="PhotoViewController" customModule="Facebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OTa-GL-2xp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -190,7 +190,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="xHh-jB-KDB">
-                                        <rect key="frame" x="0.0" y="46" width="375" height="571"/>
+                                        <rect key="frame" x="0.0" y="46" width="375" height="573"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
@@ -198,19 +198,19 @@
                                         <rect key="frame" x="0.0" y="613" width="375" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="doneButton" id="vey-AN-1xT">
+                                        <rect key="frame" x="320" y="15" width="51" height="27"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1qN-ZT-gB1">
+                                        <rect key="frame" x="320" y="15" width="51" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="onTapDone:" destination="k2c-E5-mTK" eventType="touchUpInside" id="tOm-ab-wVk"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="doneButton" id="vey-AN-1xT">
-                                <rect key="frame" x="315" y="17" width="51" height="27"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1qN-ZT-gB1">
-                                <rect key="frame" x="318" y="14" width="51" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="onTapDone:" destination="k2c-E5-mTK" eventType="touchUpInside" id="tOm-ab-wVk"/>
-                                </connections>
-                            </button>
                         </subviews>
                     </view>
                     <connections>
@@ -225,7 +225,7 @@
         <!--Feed View Controller-->
         <scene sceneID="ciN-9Y-iRY">
             <objects>
-                <viewController id="AiT-LM-9ug" customClass="FeedViewController" customModule="Facebook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="feedViewController" id="AiT-LM-9ug" customClass="FeedViewController" customModule="Facebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k4N-n0-Nva">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

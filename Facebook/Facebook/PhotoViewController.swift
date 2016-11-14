@@ -21,6 +21,7 @@ class PhotoViewController: UIViewController,UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = image
+        scrollView.backgroundColor = UIColor(white: 0, alpha: 1)
     }
 
     override func didReceiveMemoryWarning() {
