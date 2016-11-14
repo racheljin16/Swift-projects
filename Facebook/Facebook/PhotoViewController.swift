@@ -12,7 +12,6 @@ class PhotoViewController: UIViewController,UIScrollViewDelegate {
 
 
     @IBOutlet weak var scrollView: UIScrollView!
-
     @IBOutlet weak var imageView: UIImageView!
 
 
