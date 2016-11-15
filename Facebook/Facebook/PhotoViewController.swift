@@ -14,13 +14,18 @@ class PhotoViewController: UIViewController,UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
 
+    @IBOutlet weak var photoActionImage: UIImageView!
 
     var image: UIImage!
+    var scrollViewOffset: CGFloat!
+    var scrollDistance: CGFloat!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = image
-        scrollView.backgroundColor = UIColor(white: 0, alpha: 1)
+        scrollView.backgroundColor = UIColor(white: 0, alpha: 0.9)
+        scrollView.contentSize = CGSize(width: 375, height: 900)
+        scrollView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,6 +36,7 @@ class PhotoViewController: UIViewController,UIScrollViewDelegate {
     @IBAction func onTapDone(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
+    
 
     /*
     // MARK: - Navigation

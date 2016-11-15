@@ -215,6 +215,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="xHh-jB-KDB" id="P2b-6g-gT1"/>
+                        <outlet property="photoActionImage" destination="N8l-tT-ior" id="2X1-c3-B7E"/>
                         <outlet property="scrollView" destination="nAa-Bo-0fl" id="2Pq-q4-NTC"/>
                     </connections>
                 </viewController>
