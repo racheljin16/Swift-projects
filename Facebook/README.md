@@ -2,7 +2,7 @@
 
 The purpose of this homework is to leverage animations and gestures to transition between screens. We're going to use the techniques from this week to implement some interactions in Facebook.
 
-Time spent: **5** hours spent in total 
+Time spent: **8** hours spent in total 
 
 ### Features
 
