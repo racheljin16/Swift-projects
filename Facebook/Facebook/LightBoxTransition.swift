@@ -92,12 +92,12 @@ class LightBoxTransition: BaseTransition {
         let feedViewController = navigationController.topViewController as!FeedViewController
         let photoViewController = fromViewController as! PhotoViewController
         
-        var frame = window.convert(feedViewController.selectedImageView.frame, from: feedViewController.scrollView)
-        var endFrame = window.convert(feedViewController.selectedImageView.frame, from: feedViewController.scrollView)
+        let frame = window.convert(photoViewController.imageView.frame, from: photoViewController.scrollView)
+        let endFrame = window.convert(feedViewController.selectedImageView.frame, from: feedViewController.scrollView)
         
         endTransitionImageView = UIImageView(frame: frame)
         endTransitionImageView.image = photoViewController.imageView.image
-        endTransitionImageView.contentMode = UIViewContentMode.scaleAspectFit
+        endTransitionImageView.contentMode = UIViewContentMode.scaleAspectFill
         window.addSubview(endTransitionImageView)
         
         fromViewController.view.alpha = 0
