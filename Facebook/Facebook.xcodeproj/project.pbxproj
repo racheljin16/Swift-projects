@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC2961361DDABEAB00CA2E8F /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2961351DDABEAB00CA2E8F /* Common.swift */; };
 		CC2FF3291DD41DE50024FC69 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF3271DD41DE50024FC69 /* BaseTransition.swift */; };
 		CC2FF32A1DD41DE50024FC69 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF3281DD41DE50024FC69 /* FadeTransition.swift */; };
 		CC2FF32C1DD41E0F0024FC69 /* LightBoxTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF32B1DD41E0F0024FC69 /* LightBoxTransition.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC2961351DDABEAB00CA2E8F /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		CC2FF3271DD41DE50024FC69 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
 		CC2FF3281DD41DE50024FC69 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 		CC2FF32B1DD41E0F0024FC69 /* LightBoxTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightBoxTransition.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				CC2FF3271DD41DE50024FC69 /* BaseTransition.swift */,
 				CC2FF3281DD41DE50024FC69 /* FadeTransition.swift */,
 				CC2FF32B1DD41E0F0024FC69 /* LightBoxTransition.swift */,
+				CC2961351DDABEAB00CA2E8F /* Common.swift */,
 				CC2FF32F1DD53CCF0024FC69 /* Main.storyboard */,
 			);
 			path = Facebook;
@@ -308,6 +311,7 @@
 				CC6B49FD1DD2621D00219040 /* CheckInViewController.swift in Sources */,
 				CC2FF32A1DD41DE50024FC69 /* FadeTransition.swift in Sources */,
 				CC2FF32C1DD41E0F0024FC69 /* LightBoxTransition.swift in Sources */,
+				CC2961361DDABEAB00CA2E8F /* Common.swift in Sources */,
 				CC2FF32E1DD4F9660024FC69 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

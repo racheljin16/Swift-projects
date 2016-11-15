@@ -37,7 +37,7 @@ class FeedViewController: UIViewController {
         scrollView.scrollIndicatorInsets.bottom = 50
         
     }
-
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
