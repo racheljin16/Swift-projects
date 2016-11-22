@@ -31,3 +31,12 @@
 8. Facebook
  - Week5 assignment
  - leverage animations and gestures to transition between screens
+
+9. Rotten Tomatoes
+ - Week 6 Lab work
+ - Table view with real data
+ 
+10. Locale
+ - Team Project with Linda & Amy
+ - A community bulletin board to communicate with your neighbors and find out what's happening in your neighborhood.
+ - Hyper local mobile App
