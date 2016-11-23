@@ -36,7 +36,7 @@
  - Week 6 Lab work
  - Table view with real data
  
-10. Locale
- - Team Project with Linda & Amy
+10. Backyard
+ - Team Project with Linda Yang & Amy Wu
  - A community bulletin board to communicate with your neighbors and find out what's happening in your neighborhood.
  - Hyper local mobile App
