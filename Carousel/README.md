@@ -54,8 +54,8 @@ Time spent: **14** hours spent in total
 
 
 ##### Notes
-- Spent some time on the tile animation. Still have some questions on code.
-- Spent some time on popping twice method.
+- Spent some time on the tile animation with a for loop.
+- Spent some time on popping-to-vc.
 
 
 
